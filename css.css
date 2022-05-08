@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+:root{
+
+    --colordefault: #E3CA56;
+
+}
+
+/*=====Configurações iniciais======*/
+
+*{
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+
+    background: url(./imagens/background.jpg) repeat;
+    background-color: black;
+
+}
+
+h1::selection, p::selection, i::selection, a::selection, img::selection, button::selection {
+
+    background-color:#4D4D4D;
+
+}
+
+a{
+
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+
+}
+
+ul{
+
+    list-style-type: none;
+
+}
+
+li{
+
+    display: inline-block;
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+/*===========Inicio da header===========*/
+
+#nav {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1vh;
+    width: -1vw;
+    height: 10vh;
+    padding-bottom: 1vh;
+    background-color: #eeeeee;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+}
+
+#head{
+
+    position: sticky;
+    top: 0;
+    width: -1vw;
+    height: 10vh;
+    z-index: 3333;
+
+}
+
+#nav #label, #checkbox{
+
+    display: none;
+
+}
+
+#nav a{
+
+    color: black;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+
+}
+
+#ul1 li:first-child a{
+
+    color: #478AD3;
+
+}
+
+#nav img{
+
+    width: 5vw;
+    height: auto;
+
+}
+
+#ul1 li:nth-child(2) a:hover{
+
+    color: red;
+
+}
+
+#ul1 li:nth-child(3) a:hover{
+
+    color: red;
+
+}
+
+#checkbox2{
+
+    display: none;
+    overflow: hidden;
+
+}
+
+#checkbox2 img{
+
+    max-width: 30px;
+    min-width: 10px;
+
+}
+
+@media (max-width: 1000px){
+
+    body{
+
+        position: relative;
+
+    }
+
+    #checkbox2{
+
+        display: inline-block;
+
+    }
+
+    #nav #label{
+
+        display: inline-block;
+        z-index: 3;
+
+    }
+
+    #nav #label img{
+
+        width: 50px;
+        height: auto;
+
+    }
+
+    #nav #checkbox:checked + ul{
+
+        width: 100vw;
+
+    }
+
+    #nav img{
+
+        width: 100px;
+
+    }
+
+    #nav ul{
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        height: 100vh;
+        width: 0vw;
+        overflow: hidden;
+        background-color: #E5EDE1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transition: 0.5s ease-in-out;
+    }
+
+    #nav ul li{
+
+        width: auto;
+        font-size: 3rem;
+        display: inline-block;
+        border-right: none;
+
+    }
+
+}
+
+@media (max-width: 300px){
+
+    #nav img{
+
+        width: 50%;
+
+    }
+
+    #label {
+
+        width: 50%;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    #nav #label img {
+
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #nav ul li a {
+
+        font-size: 1.2rem;
+
+    }
+
+}
+
+@media (max-width:410px){
+
+    #nav ul li {
+
+        font-size: 1rem;
+
+    }
+
+}
+
+
+/*==========main do site com todas as sections===============*/
+
+#main{
+
+    margin-top: 0px;
+    width: -1vw;
+
+}
+
+#parte-inicial-do-site{
+
+    background: white url(./imagens/pexelsphoto3404200.jpeg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: -1vw;
+    height: 100vh;
+    padding-left: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+}
+
+#parte-inicial-do-site div{
+
+    font-size: 1.5rem;
+    width: 40vw;
+    color: white;
+}
+
+#parte-inicial-do-site div h1::selection,p::selection{
+
+    background-color: #4D4D4D;
+
+}
+
+#section-02{
+
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    height: auto;
+
+}
+
+#section-02 div{
+
+    width: 600px;
+    height: auto;
+
+}
+
+#section-02 img{
+
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#section-02 div:last-child h1{
+
+    align-self: center;
+
+}
+
+#section-02 div:last-child a{
+
+    padding: 10px;
+    font-size: 1.5rem;
+    align-self: center;
+    transition: 0.3s ease-in-out;
+    position: relative;
+
+}
+
+#section-02 div:last-child a::before{
+
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border: 2px solid gray;
+    transition: 0.3s ease;
+
+}
+#section-02 div:last-child a:hover::before, #section-02 div:last-child a:focus::before{
+
+    top: calc(2px*-2);
+    right: calc(2px*-2);
+    bottom: calc(2px*-2);
+    left: calc(2px*-2);
+    z-index: 1;
+
+}
+
+#section-02 div:last-child img{
+
+    transition: 0.3s ease-in-out;
+
+}
+
+#section-02 div:last-child img:hover{
+
+    background-color: white;
+    border-radius: 100%;
+    transform: scale(0.8, 0.8);
+
+}
+
+#section-02 div:last-child{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#section-03{
+
+    background-color: black;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    width: -1;
+    height: auto;
+
+}
+
+#section-03 > div{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: -1;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+#section-03 div div img{
+
+    width: 100%;
+    min-height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#section-03 div div{
+
+    color: white;
+    max-width: 300px;
+    min-width: 100px;
+
+}
+
+#section-03 div div h1{
+
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+@media (max-width: 960px){
+
+    #section-03 div div:last-child{
+
+        max-width: 80vw;
+        min-width: 70%;
+        height: auto;
+        text-align: center;
+
+    }
+
+    #section-03 div div:last-child img{
+
+        width: 60vw;
+        height: 500px;
+
+    }
+
+    #parte-inicial-do-site > div{
+
+        font-size: 1rem;
+
+    }
+
+    #section-04 div{
+
+        font-size: 1rem;
+
+    }
+
+
+}
+
+@media (max-width: 500px){
+
+    #section-03 div div:last-child img{
+
+        min-height: 450px;
+
+    }
+
+    #section-03 div div:last-child{
+
+        max-width: 300px;
+        min-width: 100px;
+
+    }
+
+    #section-04 > div{
+
+        font-size: 1rem;
+        color: black;
+
+    }
+
+    #parte-inicial-do-site{
+
+        justify-content: center;
+
+    }
+
+    #parte-inicial-do-site div{
+
+        width: 100vw;
+
+    }
+
+}
+
+#section-04{
+
+    background-image: url(./imagens/pexelsphoto3319333.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 10vh;
+    align-items: flex-end;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding-left: 10px;
+
+}
+
+#section-04 div{
+
+    max-width: 900px;
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding-bottom: 5vh;
+
+}
+
+#section-04 div h1 {
+
+    text-align: left;
+
+}
+
+#section-04 div a{
+
+    display: inline-block;
+    align-self: center;
+    z-index: 1;
+    position: relative;
+    transition: 0.3s ease;
+    padding: 20px;
+    border-radius: 30px;
+
+}
+
+#section-04 div a:hover {
+
+    color: black;
+
+}
+
+#section-04 div a::before{
+
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    transform: scaleX(0);
+    transition: 1s ease;
+    border-radius: 30px;
+
+}
+
+#section-04 div a:hover::before, #section-04 div a:focus::before{
+
+    background-color: #4D4D4D;
+    transform: scaleX(1);
+   
+}
+
+#section-05 {
+
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#section-05 div {
+
+    color: white;
+    width: 500px;
+
+}
+
+#section-05 div h1 {
+
+    margin-bottom: 20px;
+
+}
+
+#section-05 img{
+
+    width: 50%;
+    height: auto;
+
+}
+
+
+#footer{
+
+    width: -1;
+    height: 50vh;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#footer div{
+
+    color: white;
+    text-align: center;
+
+}
+
+@media (max-width: 700px){
+
+    #footer > div{
+
+        font-size: 0.5rem;
+
+    }
+
+}
+
+/*======Auxiliar de configurações JS ======*/
+
+.sectionsLigado{
+
+    animation: animate 1s linear forwards;
+
+}
+
+.sectionsDesligado{
+
+    opacity: 0;
+    animation: animate2 1s linear forwards;
+
+}
+
+.sectionsEspecial{
+
+    animation: animate 1s linear forwards;
+
+}
+
+@keyframes animate{
+
+    from {opacity: 0};
+    to {opacity: 1};
+
+}
+
+@keyframes animate2{
+
+    from {opacity: 0};
+    to {opacity: 1};
+
+}
+
